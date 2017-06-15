@@ -718,7 +718,7 @@ function loadAsyncContent(wizard, options, state)
                     var currentStepContent = getStepPanel(wizard, currentIndex)._aria("busy", "true")
                         .empty().append(renderTemplate(options.loadingTemplate, { text: options.labels.loading }));
 
-                    $.ajax({ url: currentStep.contentUrl, cache: false }).done(function (data)
+                    $.ajax({ url: currentStep.contentUrl, cache: true }).done(function (data)
                     {
                         currentStepContent.empty().html(data)._aria("busy", "false").data("loaded", "1");
                         wizard.triggerHandler("contentLoaded", [currentIndex]);
