@@ -722,7 +722,7 @@ function loadAsyncContent(wizard, options, state)
                     {
                         currentStepContent.empty().html(data)._aria("busy", "false").data("loaded", "1");
                         wizard.triggerHandler("contentLoaded", [currentIndex]);
-                    });
+                    }).fail(function(){return "Wrong input! Input again."});
                     break;
             }
         }
