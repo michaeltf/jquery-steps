@@ -5,8 +5,9 @@
 .wizard,
 .tabcontrol
 {
+    display: block;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .wizard a,
