@@ -143,7 +143,7 @@
     display: block;
     margin: 0.5em;
     min-height: 35em;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     width: auto;
 
@@ -357,7 +357,7 @@
     display: inline-block;
     width: 100%;
     height: 35em;
-    overflow: hidden;
+    overflow: scroll;
     border-top: 1px solid #bbb;
     padding-top: 20px;
 }
